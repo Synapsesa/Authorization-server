@@ -1,0 +1,15 @@
+spring:
+    h2:
+        console:
+            enabled: true
+
+logging:
+  level:
+    org:
+        hibernate:
+            orm:
+                jdbc:
+                    bind: info
+        spring:
+            transaction:
+                interceptor: info
