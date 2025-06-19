@@ -4,3 +4,8 @@ server:
 spring:
     application:
         name: authorization-server
+    profiles:
+        active: local
+    config:
+        import:
+            - security/application-authorization.yml

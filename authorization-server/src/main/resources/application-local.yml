@@ -1,0 +1,26 @@
+authorization-server:
+    issuer-uri: ${local-authorization.issuer-uri}
+    clients:
+        - client-id: ${local-authorization.clients.account-service-client.client-id}
+          client-secret: ${local-authorization.clients.account-service-client.client-secret}
+          scopes:
+            - ${local-authorization.clients.account-service-client.scopes}
+          access-token-ttl-in-hours: ${local-authorization.clients.account-service-client.access-token-ttl-in-hours}
+    
+        - client-id: ${local-authorization.clients.payment-service-client.client-id}
+          client-secret: ${local-authorization.clients.payment-service-client.client-secret}
+          scopes:
+            - ${local-authorization.clients.payment-service-client.scopes}
+          access-token-ttl-in-hours: ${local-authorization.clients.payment-service-client.access-token-ttl-in-hours}
+        
+        - client-id: ${local-authorization.clients.chat-service-client.client-id}
+          client-secret: ${local-authorization.clients.chat-service-client.client-secret}
+          scopes:
+            - ${local-authorization.clients.chat-service-client.scopes}
+          access-token-ttl-in-hours: ${local-authorization.clients.chat-service-client.access-token-ttl-in-hours}
+        
+        - client-id: ${local-authorization.clients.alarm-service-client.client-id}
+          client-secret: ${local-authorization.clients.alarm-service-client.client-secret}
+          scopes:
+            - ${local-authorization.clients.alarm-service-client.scopes}
+          access-token-ttl-in-hours: ${local-authorization.clients.alarm-service-client.access-token-ttl-in-hours}
